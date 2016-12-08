@@ -9,7 +9,7 @@ namespace CityInfo.API
   public class CitiesDataStore
   {
     public static CitiesDataStore Current { get; } = new CitiesDataStore();
-    public List<CityDto> Cities{ get; set; }
+    public List<CityDto> Cities { get; set; }
 
     public CitiesDataStore()
     {
@@ -19,7 +19,22 @@ namespace CityInfo.API
         {
           Id = 1,
           Name = "New York City",
-          Description = "Something about New York City."
+          Description = "Something about New York City.",
+          PointsOfInterest = new List<PointsOfInterestsDto>()
+          {
+            new PointsOfInterestsDto()
+            {
+              Id = 1,
+              Name = "Central Park",
+              Description = "A big park."
+            },
+            new PointsOfInterestsDto()
+            {
+              Id = 2,
+              Name = "Empire State Building",
+              Description = "A big building."
+            }
+          }
         },
         new CityDto()
         {
