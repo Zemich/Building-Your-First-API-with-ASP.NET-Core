@@ -20,15 +20,15 @@ namespace CityInfo.API
           Id = 1,
           Name = "New York City",
           Description = "Something about New York City.",
-          PointsOfInterest = new List<PointsOfInterestsDto>()
+          PointsOfInterest = new List<PointsOfInterestDto>()
           {
-            new PointsOfInterestsDto()
+            new PointsOfInterestDto()
             {
               Id = 1,
               Name = "Central Park",
               Description = "A big park."
             },
-            new PointsOfInterestsDto()
+            new PointsOfInterestDto()
             {
               Id = 2,
               Name = "Empire State Building",
