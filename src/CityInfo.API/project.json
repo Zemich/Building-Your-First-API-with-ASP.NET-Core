@@ -10,7 +10,8 @@
     "Microsoft.Extensions.Logging.Console": "1.0.0",
     "Microsoft.AspNetCore.Mvc": "1.1.0",
     "Microsoft.AspNetCore.Mvc.Formatters.Xml": "1.0.1",
-    "Microsoft.Extensions.Logging.Debug": "1.0.0"
+    "Microsoft.Extensions.Logging.Debug": "1.0.0",
+    "NLog.Extensions.Logging": "1.0.0-rtm-alpha5"
   },
 
   "tools": {

@@ -9,6 +9,8 @@ using Microsoft.AspNetCore.Mvc.Formatters;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Newtonsoft.Json.Serialization;
+using NLog.Extensions.Logging;
+using CityInfo.API.Services;
 
 namespace CityInfo.API
 {
@@ -30,6 +32,12 @@ namespace CityInfo.API
             //    castedResolver.NamingStrategy = null;
             //  }
             //});
+
+#if DEBUG
+            services.AddTransient<IMailService, LocalMailService>();
+#else
+            services.AddTransient<IMailService, CloudMailService>();
+#endif
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -38,6 +46,10 @@ namespace CityInfo.API
             loggerFactory.AddConsole();
 
             loggerFactory.AddDebug();
+
+            //Two different ways to add the logging provider:
+            //loggerFactory.AddProvider(new NLogLoggerProvider());
+            loggerFactory.AddNLog();
 
             if (env.IsDevelopment())
             {
