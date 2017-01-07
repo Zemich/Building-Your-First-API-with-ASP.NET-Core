@@ -13,42 +13,42 @@ namespace CityInfo.API
 
     public CitiesDataStore()
     {
-      Cities = new List<CityDto>()
-      {
-        new CityDto()
-        {
-          Id = 1,
-          Name = "New York City",
-          Description = "Something about New York City.",
-          PointsOfInterest = new List<PointsOfInterestDto>()
-          {
-            new PointsOfInterestDto()
-            {
-              Id = 1,
-              Name = "Central Park",
-              Description = "A big park."
-            },
-            new PointsOfInterestDto()
-            {
-              Id = 2,
-              Name = "Empire State Building",
-              Description = "A big building."
-            }
-          }
-        },
-        new CityDto()
-        {
-          Id = 2,
-          Name = "Antwerp",
-          Description = "Something about Antwerp."
-        },
-        new CityDto()
-        {
-          Id = 3,
-          Name = "Paris",
-          Description = "Something about Paris."
-        }
-      };
+      //Cities = new List<CityDto>()
+      //{
+      //  new CityDto()
+      //  {
+      //    Id = 1,
+      //    Name = "New York City",
+      //    Description = "Something about New York City.",
+      //    PointsOfInterest = new List<PointsOfInterestDto>()
+      //    {
+      //      new PointsOfInterestDto()
+      //      {
+      //        Id = 1,
+      //        Name = "Central Park",
+      //        Description = "A big park."
+      //      },
+      //      new PointsOfInterestDto()
+      //      {
+      //        Id = 2,
+      //        Name = "Empire State Building",
+      //        Description = "A big building."
+      //      }
+      //    }
+      //  },
+      //  new CityDto()
+      //  {
+      //    Id = 2,
+      //    Name = "Antwerp",
+      //    Description = "Something about Antwerp."
+      //  },
+      //  new CityDto()
+      //  {
+      //    Id = 3,
+      //    Name = "Paris",
+      //    Description = "Something about Paris."
+      //  }
+      //};
     }
   }
 }
